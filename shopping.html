@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="img/logo.png">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+      <!-- owel carsoul -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- bootstrap select -->
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <!-- animate -->
+      <!-- table -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/style.css" />
+      <style>
+     .spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+      </style>
+      <!--NVD3-->
+   </head>
+   <body>
+      <!-- ============================================================ -->
+      <!-- =====nav===== -->
+      <!-- ============================================================ -->
+      <nav>
+         <div class="container-fluid">
+            <div class="nav-flex">
+               <div class="flex-item align-right nav-dep">
+                  <a href="index.html">
+                      <i class="fas fa-chevron-right"></i>
+                      <p class="inline-block">العودة للاقسام الرئيسية</p>
+                  </a>
+               </div>
+               <div class="flex-item align-center">
+                  <a href="index.html"><img class="logo" src="img/logo.png"></a>
+               </div>
+               <div class="flex-item align-center">
+                  <ul class="list-nav">
+                  
+                     <li>
+                        <a href="about.html" class="filter" data-toggle="tooltip" data-placement="bottom" title="عن اماز">
+                        <i class="fas fa-info"></i>
+                        </a> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================ -->
+      <!-- =====sec1===== -->
+      <!-- ============================================================ -->
+      <section class="sec-shop">
+         <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead>
+               <tr  class="">
+                  <th scope="col">التفاصيبل</th>
+                  <th scope="col">الكمية</th>
+                  <th scope="col">السعر</th>
+                  <th scope="col">الاجمالي</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               
+               
+                 <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               
+                 <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               
+                 <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               
+                 <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+               <tr  class="">
+                  <td class="flex-shop-img">
+                     <img src="img/Mobile-Phone-PNG-Image.png">
+                     <div>
+                        <p>اسم المنتج</p>
+                        <p>القسم الفرعي</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="number">
+                        <span class="plus">+</span>
+                        <input class="plus-minus" type="text" value="0"/>
+                        <span class="minus">-</span>
+                     </div>
+                  </td>
+                  <td>100 ريال</td>
+                  <td>300</td>
+               </tr>
+              
+             
+            </tbody>
+         </table>
+      </section>
+      
+      
+  <!-- <div class="loader">
+      
+            <div class="spinner">
+  <div class="cube1"></div>
+  <div class="cube2"></div>
+</div>
+     
+   </div>-->
+
+
+      <!-- jquery -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrab -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- bootstrab select -->
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/script.js"></script> 
+      <!-- table -->
+      <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> 
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> 
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script> 
+      
+      
+      
+      
+      
+      <script>
+        /* $(document).ready(function() {
+         $('#example').DataTable();
+             
+       
+         } );
+          */
+          
+          $(document).ready(function() {
+    $('#example').DataTable( {
+        "pageLength":4
+       
+    } );
+} );
+      </script>
+      <script>$(function () {
+         $('[data-toggle="tooltip"]').tooltip();
+         });
+          
+          
+      </script> 
+    
+    <!-- plus and-minus -->
+      <script>
+         $(document).ready(function() {
+         $('.minus').click(function () {
+         var $input = $(this).parent().find('input');
+         var count = parseInt($input.val()) - 1;
+         count = count < 0 ? 0 : count;
+         $input.val(count);
+         $input.change();
+         return false;
+         });
+         $('.plus').click(function () {
+         var $input = $(this).parent().find('input');
+         $input.val(parseInt($input.val()) + 1);
+         $input.change();
+         return false;
+         });
+         });  
+          
+          
+      </script>
+      <script>
+          
+        window.onload = function () {
+		$(".loder").fadeOut(20);
+	};
+       
+       
+       </script>
+    
+   </body>
+</html>

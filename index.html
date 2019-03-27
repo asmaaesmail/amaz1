@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="img/logo.png">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+      <!-- owel carsoul -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- bootstrap select -->
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <!-- animate -->
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/style.css" />
+      <style>
+      </style>
+      <!--NVD3-->
+   </head>
+   <body>
+      <!-- ============================================================ -->
+      <!-- =====nav===== -->
+      <!-- ============================================================ -->
+      <div class="container">
+          <nav>
+         <div class="container-fluid">
+            <div class="nav-flex">
+               <div class="flex-item align-right nav-dep">
+                  <a href="index.html">
+                      <i class="fas fa-chevron-right"></i>
+                      <p class="inline-block">العودة للاقسام الرئيسية</p>
+                  </a>
+               </div>
+               <div class="flex-item align-center">
+                  <a href="index.html"><img class="logo" src="img/logo.png"></a>
+               </div>
+               <div class="flex-item align-center">
+                  <ul class="list-nav">
+                     <li class="filter-nav">
+                        <a class="" data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="fas fa-sliders-h"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="shopping.html" class="filter" data-toggle="tooltip" data-placement="bottom" title="سلة المشتريات">
+                        <i class="fas fa-cart-plus"></i>
+                        </a>  
+                     </li>
+                     <li class="search-nav">
+                        <a class="filter"  data-toggle="modal" data-target="#exampleModalCenter1"  data-placement="bottom" title="ابحث">
+                        <i class="fas fa-search"></i>
+                        </a> 
+                     </li>
+                     <li>
+                        <a href="about.html" class="filter" data-toggle="tooltip" data-placement="bottom" title="عن اماز">
+                        <i class="fas fa-info"></i>
+                        </a> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+      </div>
+      <!-- ======================================== -->
+      <!-- ====modal==== -->
+      <!-- ======================================== -->
+      <!-- Modal -->
+      <div class=" wow modal modal-animation"  style=" " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <p class="p-modal"> الفلترة </p>
+                  <div class="select-custom">
+                     <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">الاقسام</option>
+                        <option data-tokens="mustard">سامسونج</option>
+                        <option data-tokens="frosting">هاواي</option>
+                        <option data-tokens="frosting">هاواي</option>
+                        <option data-tokens="frosting">هاواي</option>
+                     </select>
+                  </div>
+                  <div class="select-custom">
+                     <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">الماركة</option>
+                        <option data-tokens="mustard">note 7</option>
+                        <option data-tokens="frosting">S6</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label class="block gray" >السعر</label>
+                     <input type="text" class="form-control width-auto inline-block" placeholder="الي" > 
+                     <span class="minus"> <i class="fas fa-minus"></i> </span> 
+                     <input type="text" class="form-control width-auto inline-block" placeholder="من" >
+                  </div>
+                  <div class="line"></div>
+                  <button type="button" class="btn-11 btn  exit button-modal " data-dismiss="modal"> 
+                  <p class="sub-p exit1 "> الغاء</p>
+                  </button>
+                  
+                   <button type="button" class="btn-11 btn  execute button-modal " data-dismiss="modal"> 
+                  <p class="sub-p excu1 "> تاكيد</p>
+                  </button>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ======================================== -->
+      <!-- ==== search modal==== -->
+      <!-- ======================================== -->
+      <div class="modal modal-animation" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <main>
+                     <h1>ابحث  هنا</h1>
+                     <div class="">
+                        <form class="SearchBox">
+                            <input type="text" class="SearchBox-input" placeholder="ابحث" >
+                        <button class="SearchBox-button" type="submit" >
+                        <i class="fas fa-search"></i>
+                        </button>
+                        </form>
+                     </div>
+                  </main>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================ -->
+      <!-- =====sec1===== -->
+      <!-- ============================================================ -->
+      
+      
+     <!-- 
+      <div id="myOrders">
+   <ul class="list">
+      <li class="orrr-name">
+
+      </li>
+      
+      
+   </ul>
+   <ul class="pagination">
+      <li><a class="page" href='javascript:function Z(){Z=""}Z()'>1</a></li>
+      <li><a class="page" href='javascript:function Z(){Z=""}Z()'>2</a></li>
+      <li class="active"><a class="page" href='javascript:function Z(){Z=""}Z()'>3</a></li>
+   </ul>
+</div>-->
+      <section class="sec1" id="myOrders">
+         <div class="container">
+            <div class="row list">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+               
+                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+               
+                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 sec1-phones orrr-name">
+                  <a href="sub-brnch.html">
+                     <div class="content-mob  wow">
+                        <div class="content-img">
+                           <img src="img/Mobile-Phone-PNG-Image.png">
+                        </div>
+                        <div class="sub-div ">
+                           <div class="btn-11">
+                              <p class="sub-p "> قسم رائيسي</p>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               
+               
+            </div>
+         </div>
+         
+         
+          <ul class="pagination">
+      <li><a class="page" href='javascript:function Z(){Z=""}Z()'>1</a></li>
+      <li><a class="page" href='javascript:function Z(){Z=""}Z()'>2</a></li>
+      <li class="active"><a class="page" href='javascript:function Z(){Z=""}Z()'>3</a></li>
+   </ul>
+         
+      </section>
+      
+    
+ 
+
+      
+   
+     <!-- <div class="circle">
+         <div class="block">
+            <i class="hovicon effect-4 sub-b">IO</i>
+         </div>
+      </div>-->
+      <!-- jquery -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrab -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- bootstrab select -->
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/script.js"></script> 
+      <script>$(function () {
+         $('[data-toggle="tooltip"]').tooltip();
+         });
+          
+          
+      </script> 
+      
+       <!-------------- Pagination List------------------------>
+    <script src="js/list.js"></script>
+    <script src="js/pagination.js"></script>
+
+    <script>
+        /*$(document).ready(function(){
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:6,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+        })*/
+
+        
+        
+        if (window.matchMedia("(min-width: 1024px").matches) {
+            /*oktoby initialization el desktop*/
+             $(document).ready(function(){
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:12,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+        })
+ 
+} 
+        
+        else if (window.matchMedia("(min-width: 992px)").matches) {
+            /*oktoby initialization el desktop*/
+             $(document).ready(function(){
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:8,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+        })
+ 
+} 
+        
+        else if (window.matchMedia("(min-width: 768px)").matches){
+ /* we hena initialization el mobile */
+    
+    
+    
+     
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:16,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+       
+}
+        
+        
+        else if (window.matchMedia("(min-width: 600px)").matches){
+ /* we hena initialization el mobile */
+    
+    
+    
+     
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:6,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+       
+}
+        else {
+ /* we hena initialization el mobile */
+    
+    
+    
+     
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:6,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+       
+}
+    </script>
+
+   </body>
+</html>

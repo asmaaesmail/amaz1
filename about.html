@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="img/logo.png">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+      <!-- owel carsoul -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- bootstrap select -->
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <!-- animate -->
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/style.css" />
+      <style>
+      </style>
+      <!--NVD3-->
+   </head>
+   <body>
+      <!-- ============================================================ -->
+      <!-- =====nav===== -->
+      <!-- ============================================================ -->
+      <nav>
+         <div class="container-fluid">
+            <div class="nav-flex">
+               <div class="flex-item align-right nav-dep">
+                  <i class="fas fa-chevron-right"></i>
+                  <p class="inline-block"><a href="index.html">العودة للاقسام الرئيسية</a></p>
+               </div>
+               
+             
+            </div>
+         </div>
+      </nav>
+      
+      <!-- ============================================================ -->
+      <!-- =====sec1===== -->
+      <!-- ============================================================ -->
+      <section class="sec1-about">
+          
+          <div><a href="index.html"><img src="img/logo.png" class="logo-about"></a></div>
+          <p class="p-about">
+             هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذه المساحة
+          </p>
+          <div class="media-icon">
+              <a href="#"><i class="fab fa-snapchat-ghost snap"></i></a>
+              <a href="#"> <i class="fab fa-facebook-f face"></i></a>
+             
+              <a href="#"><i class="fab fa-twitter twitter"></i></a>
+             <a href="#"> <i class="fab fa-instagram instgram"></i></a>
+          </div>
+          <div class="amaz-link">
+              <a href="index.html"> @AMAZ_STORE</a>
+          </div>
+          
+          
+        
+  
+      </section>
+      
+
+      <!-- jquery -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrab -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- bootstrab select -->
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/script.js"></script> 
+      <script>$(function () {
+         $('[data-toggle="tooltip"]').tooltip();
+         });
+          
+          
+      </script> 
+      
+       <!-------------- Pagination List------------------------>
+    <script src="js/list.js"></script>
+    <script src="js/pagination.js"></script>
+
+    <script>
+        /*$(document).ready(function(){
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:6,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+        })*/
+
+        
+        
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            /*oktoby initialization el desktop*/
+             $(document).ready(function(){
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:8,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+        })
+ 
+} else {
+ /* we hena initialization el mobile */
+    
+    
+    
+     
+            var list = new List('myOrders', {
+                valueNames: ['orrr-name'],
+                page:6,
+                pagination: true,
+                plugins: [ListPagination({})]
+            });
+       
+}
+    </script>
+
+   </body>
+</html>
